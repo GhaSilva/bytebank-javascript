@@ -19,14 +19,12 @@ export class Conta{
         }
  
     }
-
+    //Metodo abstrato
     sacar(valor){
-        if(this._saldo >= valor){
-            this._saldo -= valor;
-            return valor;
-            } 
-        
-        }
+        console.log("Calma lá meu patrão");
+        throw new Error("O método Sacar da Conta é abstrato")
+    }
+
     depositar(valor){
         if(valor <= 0) return;
             
