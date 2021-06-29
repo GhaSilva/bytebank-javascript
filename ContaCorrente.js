@@ -14,9 +14,6 @@ export class ContaCorrente extends Conta{
         if(this._saldo >= valor ){
             this._saldo -= valor * taxa;
             return valor;
-            } 
-        
-        }
-
-    
+            }     
+        }   
     }
