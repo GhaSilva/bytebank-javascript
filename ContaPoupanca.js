@@ -6,6 +6,13 @@ export class ContaPoupanca extends Conta{
         super(saldoInicial, cliente, agencia)
        
     }
-
+    sacar(valor){
+        let taxa = 1.02  
+        if(this._saldo >= valor ){
+            this._saldo -= valor * taxa;
+            return valor;
+            } 
+        
+        }
 
 }
