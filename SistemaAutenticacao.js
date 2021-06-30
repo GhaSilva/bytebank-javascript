@@ -1,5 +1,9 @@
 export class SistemaAutenticacao{
     static login(funcionario, senha){
-        return funcionario.senha == senha
+       if(funcionario.senha != senha){
+           return false;
+       }else{
+           return true;
+       }
     }
 }
